@@ -44,6 +44,17 @@
       "cost": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "Front end boladão",
+      "budget": "3000",
+      "category": {
+        "id": "3",
+        "name": "Mobile"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
