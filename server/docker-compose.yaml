@@ -18,3 +18,5 @@ volumes:
     external: true
 # para criar este volume:
 # docker volume create pgericadata
+
+#docker na pasta server
