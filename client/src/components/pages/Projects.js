@@ -33,7 +33,7 @@ function Projects() {
         })
           .then((resp) => resp.json())
           .then((data) => {
-            setProjects(data)
+            setProjects(data.filter(el => el.name))
             setRemoveLoading(true)
           }),
       100,
