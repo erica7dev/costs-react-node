@@ -33,7 +33,7 @@ function Projects() {
         })
           .then((resp) => resp.json())
           .then((data) => {
-            setProjects(data)
+            setProjects(data.filter(el => el.name))
             setRemoveLoading(true)
           }),
       100,
@@ -67,9 +67,9 @@ function Projects() {
           projects.map((project) => (
             <ProjectCard
               id={project.id}
-              name={project.name}
+              name={project?.name}
               budget={project.budget}
-              category={project.category.name}
+              category={project?.category?.name}
               key={project.id}
               handleRemove={removeProject}
             />
