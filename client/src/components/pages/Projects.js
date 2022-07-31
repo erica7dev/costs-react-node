@@ -68,7 +68,6 @@ function Projects() {
             <ProjectCard
               id={project.id}
               name={project.name}
-
               budget={project.budget}
               category={project.category.name}
               key={project.id}
