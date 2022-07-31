@@ -17,4 +17,4 @@ volumes:
   pgericadata:
     external: true
 # para criar este volume:
-# docker volume create grafanadata
+# docker volume create pgericadata
