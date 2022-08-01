@@ -140,7 +140,7 @@ function Project() {
         <div className={styles.project_details}>
           <Container customClass="column">
             {message && <Message type={type} msg={message} />}
-            <div className={styles.details_container}>
+            <div id="block-project" className={styles.details_container}>
               <h1>Projeto: {project.name}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
                 {!showProjectForm ? 'Editar projeto' : 'Fechar'}
@@ -167,7 +167,7 @@ function Project() {
                 </div>
               )}
             </div>
-            <div className={styles.service_form_container}>
+            <div id="block-addserv" className={styles.service_form_container}>
               <h2>Adicione um serviço:</h2>
               <button className={styles.btn} onClick={toggleServiceForm}>
                 {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
@@ -183,7 +183,7 @@ function Project() {
               </div>
             </div>
             <h2>Serviços:</h2>
-            <Container customClass="start">
+            <Container id="block-service" customClass="start">
               {services.length > 0 &&
                 services.map((service) => (
                   <ServiceCard
